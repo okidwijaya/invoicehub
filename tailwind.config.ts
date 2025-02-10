@@ -11,6 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primaryColor: "#1C2434",
+        secondaryColor: "#F4F4F4",
+        quinaryColor: "#F1F5F9",
+        secondaryTextColor: "#9D9D9D",
+        quinaryTextColor: "#64748B",
+        tableHeadingTextColor: "#1C2434",
+        tableSubHeadingTextColor: "#64748B",
+        inputBorderColor: "#E2E8F0",
+        buttonPrimaryColor: "#3C50E0"
       },
     },
   },
