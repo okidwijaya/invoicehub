@@ -11,7 +11,6 @@ export default function SideBarNavigation() {
   const pathname = usePathname();
   return (
     <div className='w-full h-full'>
-        {/* <h2 className='h-[80px]'>Invoice Hub</h2> */}
         <Image
           src={logo}
           width="160"
@@ -20,7 +19,7 @@ export default function SideBarNavigation() {
         />
 
         <div className='grid grid-cols-1 gap-[20px] justify-start pt-[49px]'>
-          <h2 className='text-secondaryTextColor'>Menu</h2>
+          <h2 className='text-secondaryTextColor uppercase font-medium'>Menu</h2>
           <div className='grid grid-cols-1 gap-[35px] justify-start'>
             <Link href='/invoices/add' className={`flex gap-2 justify-start items-center hover:opacity-100 ${pathname === "/invoices/add" ? "opacity-100" : "opacity-30"}`}>
               <Image
@@ -30,7 +29,7 @@ export default function SideBarNavigation() {
                 alt='logo'
                 className='fill-white'
                 />
-              <p>Add Invoice</p>
+              <p className='font-semibold capitalize'>Add Invoice</p>
             </Link>
             <Link href='/invoices/list' className={`flex gap-2 justify-start items-center hover:opacity-100 ${pathname === "/invoices/list" ? "opacity-100" : "opacity-30"}`}>
               <Image
@@ -40,7 +39,7 @@ export default function SideBarNavigation() {
                 alt='logo'
                 className='fill-white'
                 />
-              <p>My Invoice</p>
+              <p className='font-semibold capitalize'>My Invoice</p>
             </Link>
           </div>
         </div>
